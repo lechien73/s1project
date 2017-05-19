@@ -1,0 +1,33 @@
+<table class="table">
+    <thead>
+        <tr class="reviewTable">
+            <th><strong>Title Of Review</strong></th>
+            <th><strong>Review</strong></th>
+            <th><strong>User</strong></th>
+        </tr>
+         
+    </thead>
+        
+        <tr>
+            <td><strong>Billabong</strong></td>
+            <td><p>Billabong, are comfortable beach wear, and usually have very cute items for about the same prices you would expect to pay at the mall. Every once in a while you can find some steals and some very cute beach dresses or swimsuits that are to die for, that you really cannot get anywhere else. If you are looking for comfy beach like clothing. Billabong is the place to look.</p></td>
+            <td><strong>Jade-lee</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>Quicksilver</strong></td>
+            <td><p>I have been a loyal customer of one of your main competitors for my entire life. However, I recently walked into you Noosa shop and was served by [name removed] who gave me faultless service and explained the advantages of your double doby board shorts after I explained my disappointment with my existing stretch boardies from your competitor. Since purchasing and loving them I have been back and bought a second pair. I also mentioned to [name removed] about the sex wax dream cream and how good it was. He took my number and called me one week l ater to tell me he had requested to get some in store and has put some away for me. This service and quality product is the difference between you and your competitors and has won me over. Consider me a quiksilver loyal customer from now on.Thank you.</p></td>
+            <td><strong>Lwaller</strong></td>
+        </tr>
+
+
+    
+    <tr ng-repeat="review in reviews">
+        <td>{{review.title}}</td>
+        <td>{{review.description}}</td>
+        <td>
+            <button ng-click="editReview(review.id)"><span class="glyphicon glyphicon-edit"></span></button>
+            <button ng-click="deleteReview(review.id)"><span class="glyphicon glyphicon-trash"></span></button>
+        </td>
+    </tr>
+</table>

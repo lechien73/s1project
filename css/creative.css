@@ -1,59 +1,205 @@
 	
-	body{
-		padding-top:50px;
+	    body{
+		    padding-top:50px;
 	}
 
-
-
-	.navbar-brand{
-		position: absolute;
-		background-image: url('../img/logo.png');
-		background-position: left;
-		width: 100%;
-		height: 45px;
-		background-repeat: no-repeat;
-	}
-
-	header {
-		position: relative;
-  		width: 100%;
-  		min-height: 600px;
-  		background-size: cover;
-  		background-position: center;
-  		background-image: url('../img/header3.jpg');
-  		text-align: centre;
-  		vertical-align: text-bottom;
-  		color: white;
-
-	}
-
-header .header-content {
-  position: relative;
-  text-align: center;
-  padding: 150px 15px 100px;
-  width: 100%;
-}
-header .header-content .header-content-inner h1 {
-  font-weight: 700;
-  font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0px;
-  font-size: 80px;
+	   .navbar-brand{
+		    position: absolute;
+		    background-image: url('../img/logo.png');
+		    background-position: left;
+		    width: 100%;
+		    height: 45px;
+		    background-repeat: no-repeat;
 }
 
-header .header-content .header-content-inner p {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 40px;
-  margin-bottom: 20px;
+	    header {
+		    position: relative;
+  		  width: 100%;
+  		  min-height: 600px;
+  		  background-size: cover;
+  		  background-position: center;
+  		  background-image: url('../img/header3.jpg');
+  		  text-align: centre;
+  		  vertical-align: text-bottom;
+  		  color: white;
 }
 
-.btn-primary {
-  	color: white;
-  	background-color: #4430ff;
- 	border-color: #4430ff;
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 10px;
+      header .header-content {
+        position: relative;
+        text-align: center;
+        padding: 150px 15px 100px;
+        width: 100%;
+}
+
+      header .header-content .header-content-inner h1 {
+        font-weight: 700;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0px;
+        font-size: 80px;
+}
+
+      header .header-content .header-content-inner p {
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 40px;
+        margin-bottom: 20px;
+}
+
+      .btn-primary {
+  	    color: white;
+  	    background-color: #4430ff;
+ 	      border-color: #4430ff;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 40px;
+}
+
+      .formTitle {
+        margin-left: 15%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        font-style: bold;
+}
+
+      form {
+        margin-top: 20px;
+        margin-left: 100px;
+}
+
+      .reviewHeader{
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/reviewbanner.png');
+        margin-top: -20px;
+}
+
+      .reviewHeading{
+        position: relative;
+        text-align: center;
+        padding: 20px 15px 20px;
+        width: 100%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        color: white;
+        font-size: 70px;
+}
+
+      #reviewButton { 
+        color: white;
+        background-color: #4430ff;
+        border-color: #4430ff;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 40px;
+}
+
+      th{
+        font-size: 18px;
+        text-align: right;
+}
+
+      .registerHeader{
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/reviewbanner.png');
+        margin-top: -20px;
+}
+
+      .registerHeading{
+        position: relative;
+        text-align: center;
+        padding: 50px 15px 10px;
+        width: 100%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        color: white;
+        font-size: 70px;
+}
+
+      .loginHeader{
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/reviewbanner.png');
+        margin-top: -20px;
+}
+
+      .loginHeading{
+        position: relative;
+        text-align: center;
+        padding: 50px 15px 10px;
+        width: 100%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        color: white;
+        font-size: 70px;
+}
+
+      .logoutHeader{
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/reviewbanner.png');
+        margin-top: -20px;
+}
+
+      .logoutHeading{
+        position: relative;
+        text-align: center;
+        padding: 50px 15px 10px;
+        width: 100%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        color: white;
+        font-size: 70px;
+}
+
+      .logoutTitle {
+        margin-left: 30%;
+        margin-top: 5%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        font-style: bold;
+}
+
+      .pleaseRegisterHeader{
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/reviewbanner.png');
+        margin-top: -20px;
+}
+
+      .pleaseRegisterHeading{
+        position: relative;
+        text-align: center;
+        padding: 50px 15px 10px;
+        width: 100%;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        color: white;
+        font-size: 25px;
+}
+
+      #pleaseRegisterHeading{
+        font-size: 60px;
+        color: red;
+        font-weight: bold;
+}
+
+      #pleaseRegisterButton{
+        color: white;
+        background-color: #4430ff;
+        border-color: #4430ff;
+        padding: 5px 15px;
+        font-size: 15px;
+        border-radius: 40px;
+}
 

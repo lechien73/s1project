@@ -1,17 +1,29 @@
-//Define an angular module for our app
+angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'angular-storage', 'ReviewService', 'ReviewDirective']);
 
-angular.module('sampleApp', ['ngRoute']);
- 
-angular.module('sampleApp').config(function($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);  // Enable href routing without hashes
- 
+angular.module('reviewsApp').config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);
+    
     $routeProvider.when('/', {
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/home.html',
+        controller: 'HomeController'
     })
-    .when('/about', {
-        templateUrl: 'templates/about.html'
+    .when('/accounts/register', {
+        templateUrl: 'templates/register.html',
+        controller: 'RegisterController'
     })
-    .when('/contact', {
-    	templateUrl: 'templates/contact.html'
+    .when('/accounts/login', {
+        templateUrl: 'templates/login.html',
+        controller: 'LoginController'
+    })
+    .when('/accounts/logout', {
+        templateUrl: 'templates/logout.html',
+        controller: 'LogoutController'
+    })
+    .when('/review', {
+        templateUrl: 'templates/review.html',
+        controller: 'ReviewController'
+    })
+    .when('/pleaseregister', {
+        templateUrl:'templates/please-register.html'
     });
 });

@@ -1,77 +1,70 @@
 <!DOCTYPE html>
-
-	<head>
-		
-		<meta charset="UTF-8">
-		<title> Waller Reviews </title>
-		<base href="/S1project/">
-
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/creative.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>	
+<html ng-app='reviewsApp'>
 	
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
+<head>
+		
+	<meta charset="UTF-8">
+	<title> Waller Reviews </title>
+	<base href="/">
 
-	<body ng-app="reviewApp">
+	<link rel="stylesheet" type="text/css" href="/css/creative.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class='container'>
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#"></a>
-			</div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+		
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<button type="button" class="navbar-toggle" 
-		    		data-toggle="collapse" 
-		    		data-target="#CollapsingList">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			</button>
+</head>
 
-				<ul id="CollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Review</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Register</a></li>
-				</ul>
-			</div>
-		</nav>
+<body ng-app="reviewsApp">
 
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class='container'>
+		<div class="navbar-header">
+		<a class="navbar-brand" href="/"></a>
+		</div>
 
+	<button type="button" class="navbar-toggle" 
+		data-toggle="collapse" 
+		data-target="#CollapsingList">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
 
-		<header>	
-			<section class="header-content">
-   				<section class="header-content-inner">
-     				<h1 id="homeHeading">Welcome</h1>
-     				<p>Is that a good brand? All brands! Reviewed! </p>
-     				<p><a class="btn btn-primary btn-xl page-scroll" href="#">Register Now</a></p>
-   				</section>
-			</section>
-		</header>
+		<ul id="CollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
+			<li><a href="/">Home</a></li>
+			<li><a href="/review">Review</a></li>				
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+				aria-expanded="false">Accounts <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<li><a href="/accounts/register">Register</a></li>
+			<li><a href="/accounts/login">Login</a></li>
+			<li><a href="/accounts/logout">Logout</a></li>
 
-		<div ng-view>
-        <!-- This is our ng-view. The contents of the files in the templates directory are loaded here by Angular
-        when we click on the appropriate link. app.js decides which file is loaded. -->
-        </div>
-
-    <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
-
-
-
-
-</body>
-
-<script src='http://code.jquery.com/jquery.min.js'></script>
-<script src='bootstrap/js/bootstrap.min.js'></script>
+		</ul>
+			</li>
+		</ul>		
+		</div>
+	</nav>
 
 
+	<section ng-view>
+       
+    </section>
+
+    <script src='js/app.js'></script>
+	<script src='js/controller.js'></script>
+	<script src="js/service.js"></script>
+	<script src="js/directive.js"></script>
+
+</body>			
 
 </html>

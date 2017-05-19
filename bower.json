@@ -1,0 +1,23 @@
+{
+  "name": "Waller reviews",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Luke <lukerwaller@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LukeWaller/s1project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "a0-angular-storage": "^0.0.15"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Review</title>
+
+</head>	
+
+<body>
+
+	<section class="reviewHeader">
+     	<section class="reviewHeading">
+     		<p>Reviews</p>	
+    		<button id="reviewButton" type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#review-modal">Create Review</button>
+     	</section>
+	</section>
+
+	<div class="container">
+		<review-table></review-table>
+
+		<div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="review-form-modal" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                 <h4 class="modal-title" id="review-form-header">Your Review</h4>
+		            </div>
+
+		   	<div class="modal-body">
+		        <form name="reviewForm" ng-submit="submitForm()" novalidate>
+					<div class="form-group">
+						<label>Title</label>
+						<input type="text" name="title" class="form-control" ng-model="review.title" required>
+						<p ng-show="reviewForm.title.$pristine" class="help-block">A title is required</p>
+					</div>
+
+			<div class="form-group">
+				<label>Review Description</label>
+				<input type="text" name="description" class="form-control" ng-model="review.description" required>
+				<p ng-show="reviewForm.password.$pristine" class="help-block">A description is required</p>
+			</div>
+
+			<div class="form-group">
+				<label>Username</label>
+				<input type="text" name="username" class="form-control" ng-model="review.username" required>
+				<p ng-show="reviewForm.password.$pristine" class="help-block">A username is required</p>
+			</div>
+							
+			<div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="submit" class="btn btn-primary">Submit</button>
+		    </div>
+
+				</form>			
+		    </div>        
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+</body>	
+
+</html>

@@ -60,12 +60,12 @@ angular.module('RouteControllers', [])
         store.remove('username');
         store.remove('authToken');
     })
-    .controller('ReviewController', function($scope, $location, ReviewAPIService, store) {
-        var url = "https://morning-castle-91468.herokuapp.com/";
 
+
+    .controller('ReviewController', function($scope, $location, store) {
+        
         $scope.authToken = store.get('authToken');
         $scope.username = store.get('username');
-
         $scope.review = {};
 
 
@@ -76,6 +76,7 @@ angular.module('RouteControllers', [])
         if (store.get('review')) {
             $scope.reviews = store.get('review');
         }
+
 
       /*  ReviewAPIService.getReviews(url + "review/", $scope.username, $scope.authToken).then(function(results) {
             $scope.reviews = results.data;
@@ -90,7 +91,8 @@ angular.module('RouteControllers', [])
                 $scope.review.description = $scope.review.description;
                 $scope.review.username = $scope.username;
 
-                console.log($scope.review.username)
+                console.log($scope.review.username, $scope.review.title)
+                alert("You have successfully created a review");
 
                 store.set('title', $scope.review.title);
                 store.set('review', $scope.review.description);

@@ -66,7 +66,7 @@ angular.module('RouteControllers', [])
         
         $scope.authToken = store.get('authToken');
         $scope.username = store.get('username');
-        $scope.review = {};
+        $scope.reviews = {};
 
 
         if (!store.get('authToken')) {
@@ -74,7 +74,11 @@ angular.module('RouteControllers', [])
         }
 
         if (store.get('review')) {
-            $scope.reviews = store.get('review');
+            $scope.reviews.id = 1;
+            $scope.reviews.title = store.get('title');
+            $scope.reviews.description = store.get('review');
+            $scope.reviews.username = store.get('revusername');
+            console.log($scope.reviews);
         }
 
 
@@ -89,13 +93,15 @@ angular.module('RouteControllers', [])
             if ($scope.reviewForm.$valid) {
                 $scope.review.title = $scope.review.title;
                 $scope.review.description = $scope.review.description;
-                $scope.review.username = $scope.username;
+                $scope.review.username = $scope.review.username;
 
-                console.log($scope.review.username, $scope.review.title)
+                console.log($scope.review.username, $scope.review.title);
                 alert("You have successfully created a review");
 
+                store.set('id', 1);
                 store.set('title', $scope.review.title);
                 store.set('review', $scope.review.description);
+                store.set('revusername', $scope.review.username);
 
 
 

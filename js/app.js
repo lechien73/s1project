@@ -1,4 +1,4 @@
-angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'angular-storage', 'ReviewService', 'ReviewDirective']);
+angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'angular-storage', 'ReviewDirective']);
 
 angular.module('reviewsApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
